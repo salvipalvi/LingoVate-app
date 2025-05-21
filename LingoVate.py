@@ -6,14 +6,14 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 mascot = Image.open("mascot.png")
 
 # App config
-st.set_page_config(page_title="LingoVate", page_icon="🌍", layout="centered")
+st.set_page_config(page_title="Langly", page_icon="🌍", layout="centered")
 image_path = os.path.join(BASE_DIR, "images", "mascot.png")
 mascot = Image.open(image_path)
 
 # Sidebar mascot
 with st.sidebar:
     st.image(mascot, use_column_width=True)
-    st.markdown("### Welcome to LingoVate! 🌟")
+    st.markdown("### Welcome to Langly! 🌟")
     st.markdown("Choose a language and test your level!")
 
 # Language selection
