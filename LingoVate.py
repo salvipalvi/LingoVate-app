@@ -71,3 +71,7 @@ if "language" in st.session_state:
 
         st.markdown(f"### 🎓 Recommended Level: **{level}**")
         st.info("Lessons will begin from the appropriate level. (Coming soon!)")
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = LanguageSelectionScreen(root)
+    root.mainloop()
