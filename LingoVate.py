@@ -18,24 +18,27 @@ with st.sidebar:
 
 # Language selection
 st.title("🌍 Choose a language to learn")
-language = st.selectbox("Select a language:", ["Lithuanian", "Berber", "Tagalog", "Croatian"])
+language = st.selectbox("Select a language:", ["Lithuanian", "Bulgarian", "Luxembourgish"])
 
 questions = {
     "Lithuanian": [
-        {"q": "How do you say 'Hello' in Lithuanian?", "options": ["Labas", "Bonjour", "Hola", "Ciao"], "answer": "Labas"},
+        {"q": "How do you say 'Hello' formally in Lithuanian?", "options": ["Labas", "Bonjour", "Hola", "Ciao"], "answer": "Labas"},
+        {"q": "How do you say 'Hello' informally in Lithuanian?", "options": ["Sveiki", "Salut", "Ey", "Čau"], "answer": "Sveiki"},
+        {"q": "How do you say 'Goodbye' formally in Lithuanian?", "options": ["Au revoir", "Ate", "Uz redzēšanos", "Nägemist"], "answer": "Ate"},
+        {"q": "How do you say 'Goodbye' informally in Lithuanian?", "options": ["Viso gero", "Tšau", "Čau", "Visu labu"], "answer": "Viso gero"},
         {"q": "What does 'Ačiū' mean?", "options": ["Please", "Goodbye", "Thank you", "Yes"], "answer": "Thank you"},
+        {"q": "What does 'Prašau' mean?", "options": ["Present", "Tree", "Please", "Direction"], "answer": "Please"},
+        {"q": "What does 'Atsiprašau' mean?", "options": ["Excuse me ", "Watch out", "Be careful", "Attention"], "answer": "Excuse me"},
+        {"q": "What else could 'Atsiprašau' mean?", "options": ["Take care", "Fine", "Grateful", "Sorry"], "answer": "Sorry"},
+        {"q": "When someone does not understand something: They respond with:____-?", "response": user_answer = input(q +"/nYour answer:"), "answer": "Aš nesuprantu"},
     ],
-    "Berber": [
-        {"q": "What is 'Hello' in Berber?", "options": ["Azul", "Labas", "Salam", "Hallo"], "answer": "Azul"},
+    "Bulgarian": [
+        {"q": "What is 'Hello' in Bulgarian?", "options": ["Azul", "Labas", "Salam", "Hallo"], "answer": "Azul"},
         {"q": "What does 'Tanemmirt' mean?", "options": ["Sorry", "Thanks", "Good night", "No"], "answer": "Thanks"},
     ],
-    "Tagalog": [
-        {"q": "Translate 'Hello' to Tagalog:", "options": ["Kamusta", "Aloha", "Salamat", "Ni hao"], "answer": "Kamusta"},
+    "Luxembourgish": [
+        {"q": "Translate 'Hello' to Luxembourgish:", "options": ["Kamusta", "Aloha", "Salamat", "Ni hao"], "answer": "Kamusta"},
         {"q": "What does 'Salamat' mean?", "options": ["Goodbye", "Hello", "Thank you", "Love"], "answer": "Thank you"},
-    ],
-    "Croatian": [
-        {"q": "How do you say 'Hi' in Croatian?", "options": ["Bok", "Hola", "Hallo", "Hei"], "answer": "Bok"},
-        {"q": "What does 'Hvala' mean?", "options": ["Yes", "Please", "Thanks", "Bye"], "answer": "Thanks"},
     ]
 }
 
